@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Board Nana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>📌 Task Board</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Nova tarefa..." required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filters">
+      <button onclick="filtrar('todas')">Todas</button>
+      <button onclick="filtrar('pendentes')">Pendentes</button>
+      <button onclick="filtrar('concluidas')">Concluídas</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
